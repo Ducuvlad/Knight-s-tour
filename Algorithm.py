@@ -4,6 +4,10 @@ class Algorithm:
         self.size=size
         self.popl=population
     def run(self):
+        """
+        evaluate and select the population until a solution is found
+        :return: solution or best individual, list of best individuals during evolution,number of iterations
+        """
         fit=[]
         iters=0
         while self.popl.evaluate()==None:
